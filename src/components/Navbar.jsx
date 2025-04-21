@@ -16,8 +16,8 @@ const Navbar = () => {
           <NavLink to="/register" className={styles.link} activeClassName={styles.active}>
           <li>Register</li>
           </NavLink>
-          <button className={styles.exit}>Exit</button>
         </ul>
+        <button className={styles.exit}>Exit</button>
       </nav>
     </>
   )
