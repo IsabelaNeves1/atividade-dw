@@ -1,0 +1,23 @@
+name: Build Check
+
+on: 
+    push:
+        branches: 
+            - atividade-IsabelaNeves1
+    pull_request:
+            branches: 
+            - atividade-IsabelaNeves1
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v4
+
+            - name: Install dependencies
+              run: npm ci
+
+            - name: Build the project
+              run: npm run build
